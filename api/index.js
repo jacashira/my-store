@@ -23,11 +23,11 @@ const options = {
 
 app.use(cors(options))
 
-app.get('/', (req, res) => {
+app.get('/api', (req, res) => {
   res.send('Hello Word my first server with express')
 })
 
-app.get('/new', (req, res) => {
+app.get('/api/new', (req, res) => {
   res.send('Hello I´m a new route')
 })
 
